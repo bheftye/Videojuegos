@@ -1142,3 +1142,118 @@ java.lang.NullPointerException: returnTypeReference is mandatory
 	at com.android.tools.lint.client.api.LintDriver.analyze(LintDriver.java:386)
 	at com.android.ide.eclipse.adt.internal.lint.LintJob.run(LintJob.java:153)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2014-10-06 18:41:10.564 -----------------------------------------------
+eclipse.buildId=v21.1.0-569685
+java.version=1.7.0_07
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=es_ES
+Framework arguments:  -product com.android.ide.eclipse.adt.package.product -keyring /Users/brentheftye/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product com.android.ide.eclipse.adt.package.product -keyring /Users/brentheftye/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-10-06 18:42:33.415
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-10-06 18:44:40.378
+!MESSAGE Failed converting ECJ parse tree to Lombok for file /Users/brentheftye/Documents/Videojuegos/TestAndroid/src/game/mrnom/world/Stain.java
+!STACK 0
+java.lang.NullPointerException: returnTypeReference is mandatory
+	at lombok.ast.MethodDeclaration.astReturnTypeReference(MethodDeclaration.java:75)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitMethodDeclaration(EcjTreeConverter.java:1231)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:152)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:290)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:231)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:277)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:247)
+	at lombok.ast.ecj.EcjTreeConverter.access$100(EcjTreeConverter.java:140)
+	at lombok.ast.ecj.EcjTreeConverter$2.createNormalTypeBody(EcjTreeConverter.java:557)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitTypeDeclaration(EcjTreeConverter.java:480)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:48)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:290)
+	at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:231)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:277)
+	at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:247)
+	at lombok.ast.ecj.EcjTreeConverter.access$100(EcjTreeConverter.java:140)
+	at lombok.ast.ecj.EcjTreeConverter$2.visitCompilationUnitDeclaration(EcjTreeConverter.java:435)
+	at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:264)
+	at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:290)
+	at com.android.ide.eclipse.adt.internal.lint.EclipseLintClient$EclipseJavaParser.parseJava(EclipseLintClient.java:1141)
+	at com.android.tools.lint.client.api.JavaVisitor.visitFile(JavaVisitor.java:196)
+	at com.android.tools.lint.client.api.LintDriver.checkIndividualJavaFiles(LintDriver.java:1475)
+	at com.android.tools.lint.client.api.LintDriver.runFileDetectors(LintDriver.java:911)
+	at com.android.tools.lint.client.api.LintDriver.checkProject(LintDriver.java:785)
+	at com.android.tools.lint.client.api.LintDriver.analyze(LintDriver.java:386)
+	at com.android.ide.eclipse.adt.internal.lint.LintJob.run(LintJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2014-12-07 23:47:36.394 -----------------------------------------------
+eclipse.buildId=v21.1.0-569685
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=es_ES
+Framework arguments:  -product com.android.ide.eclipse.adt.package.product -keyring /Users/brentheftye/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product com.android.ide.eclipse.adt.package.product -keyring /Users/brentheftye/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.resources 2 10035 2014-12-07 23:47:57.527
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.net 1 0 2014-12-07 23:48:14.718
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2014-12-07 23:50:48.443
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2014-12-07 23:50:48.443
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2014-12-07 23:50:48.443
+!MESSAGE Software being installed: Spring UAA Integration (optional) 3.6.4.201412021241-CI-B540 (org.springframework.ide.eclipse.uaa.feature.feature.group 3.6.4.201412021241-CI-B540)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2014-12-07 23:50:48.443
+!MESSAGE Missing requirement: Spring UAA Integration 3.6.4.201412021241-CI-B540 (org.springframework.ide.eclipse.uaa 3.6.4.201412021241-CI-B540) requires 'package com.google.protobuf 0.0.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-12-07 23:50:48.443
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-12-07 23:50:48.443
+!MESSAGE From: Spring UAA Integration (optional) 3.6.4.201412021241-CI-B540 (org.springframework.ide.eclipse.uaa.feature.feature.group 3.6.4.201412021241-CI-B540)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-12-07 23:50:48.443
+!MESSAGE To: org.springframework.ide.eclipse.uaa [3.6.4.201412021241-CI-B540]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2014-12-07 23:50:48.484
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2014-12-07 23:50:48.484
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2014-12-07 23:50:48.485
+!MESSAGE Software being installed: Spring UAA Integration (optional) 3.6.4.201412021241-CI-B540 (org.springframework.ide.eclipse.uaa.feature.feature.group 3.6.4.201412021241-CI-B540)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2014-12-07 23:50:48.485
+!MESSAGE Missing requirement: Spring UAA Integration 3.6.4.201412021241-CI-B540 (org.springframework.ide.eclipse.uaa 3.6.4.201412021241-CI-B540) requires 'package com.google.protobuf 0.0.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-12-07 23:50:48.485
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-12-07 23:50:48.485
+!MESSAGE From: Spring UAA Integration (optional) 3.6.4.201412021241-CI-B540 (org.springframework.ide.eclipse.uaa.feature.feature.group 3.6.4.201412021241-CI-B540)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-12-07 23:50:48.485
+!MESSAGE To: org.springframework.ide.eclipse.uaa [3.6.4.201412021241-CI-B540]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2014-12-07 23:51:28.284
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2014-12-07 23:51:28.284
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2014-12-07 23:51:28.284
+!MESSAGE Software being installed: Eclipse Integration Commons 3.6.4.201412021241-CI-B540 (org.springsource.ide.eclipse.commons.feature.group 3.6.4.201412021241-CI-B540)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2014-12-07 23:51:28.284
+!MESSAGE Missing requirement: SpringSource Tool Suite Workspace Configuration 3.6.4.201412021241-CI-B540 (org.springsource.ide.eclipse.commons.configurator 3.6.4.201412021241-CI-B540) requires 'bundle org.springframework.core [4.0.0,4.1.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-12-07 23:51:28.284
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-12-07 23:51:28.284
+!MESSAGE From: Eclipse Integration Commons 3.6.4.201412021241-CI-B540 (org.springsource.ide.eclipse.commons.feature.group 3.6.4.201412021241-CI-B540)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-12-07 23:51:28.284
+!MESSAGE To: org.springsource.ide.eclipse.commons.configurator [3.6.4.201412021241-CI-B540]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2014-12-07 23:51:28.310
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2014-12-07 23:51:28.310
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2014-12-07 23:51:28.310
+!MESSAGE Software being installed: Eclipse Integration Commons 3.6.4.201412021241-CI-B540 (org.springsource.ide.eclipse.commons.feature.group 3.6.4.201412021241-CI-B540)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2014-12-07 23:51:28.310
+!MESSAGE Missing requirement: SpringSource Tool Suite Workspace Configuration 3.6.4.201412021241-CI-B540 (org.springsource.ide.eclipse.commons.configurator 3.6.4.201412021241-CI-B540) requires 'bundle org.springframework.core [4.0.0,4.1.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-12-07 23:51:28.310
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-12-07 23:51:28.310
+!MESSAGE From: Eclipse Integration Commons 3.6.4.201412021241-CI-B540 (org.springsource.ide.eclipse.commons.feature.group 3.6.4.201412021241-CI-B540)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-12-07 23:51:28.310
+!MESSAGE To: org.springsource.ide.eclipse.commons.configurator [3.6.4.201412021241-CI-B540]
